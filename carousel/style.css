@@ -1,0 +1,61 @@
+* {
+    box-sizing:border-box;
+}
+.carousel {
+    width: 700px;
+    margin: auto;
+    position: relative;
+}
+.carousel__inner {
+    width: 700px;
+}
+.carousel__item {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 470px;
+}
+.carousel__hidden{
+    display: none;
+}
+.carousel__active {
+    display: block;
+}
+.responsive {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+}
+.carousel__action {
+    width: 700px;
+    height: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.carousel__preview {
+    width: 10%;
+    fill: white;
+}
+.carousel__next {
+    width: 10%;
+    fill: white;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
